@@ -1,0 +1,28 @@
+@use "variables" as v;
+
+html, body {
+  height: 100%;           // Asegura que el body ocupe toda la altura de la pantalla
+  margin: 0;              // Elimina el margen por defecto
+  display: flex;          // Aplica un contenedor flex para todo el contenido
+  flex-direction: column; // Organiza el contenido en una columna (verticalmente)
+}
+
+.main {
+  padding: 20px;
+  flex-grow: 1; // Hace que el main ocupe todo el espacio disponible
+  .home-img {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+
+  main {
+  flex-grow: 1; // Hace que el main ocupe todo el espacio disponible
+}
+}
+
+
+
+
+

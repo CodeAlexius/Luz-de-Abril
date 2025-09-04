@@ -1,0 +1,64 @@
+.nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.nosotros img {
+  width: 100%;
+  max-width: 600px;  // Limitar el tamaño máximo de la imagen
+  height: auto;
+}
+
+.nosotros-texto {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.nosotros-texto h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.nosotros-texto p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.nosotros-texto ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nosotros-texto li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .nosotros img {
+    max-width: 90%;  // Ajustar el tamaño de la imagen en pantallas pequeñas
+  }
+
+  .nosotros-texto {
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .nosotros-texto h2 {
+    font-size: 1.5rem;  // Reducir el tamaño del encabezado en móviles
+  }
+
+  .nosotros-texto p {
+    font-size: 0.9rem;  // Reducir tamaño de texto en móviles
+  }
+
+  .nosotros-texto ul {
+    padding-left: 20px;  // Espaciado en listas en móviles
+  }
+
+  .nosotros-texto li {
+    font-size: 0.9rem;  // Reducir el tamaño de los elementos de la lista en móviles
+  }
+}

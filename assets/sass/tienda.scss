@@ -1,0 +1,66 @@
+// _tienda.scss
+
+.tienda {
+  padding: 2rem;
+
+  .tabla-tienda {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    .fila-ropa {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: flex-start;
+
+      section {
+        flex: 1;
+        min-width: 280px;
+
+        .ropa {
+          width: 100%;
+          max-width: 320px;
+          border-radius: 12px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+          margin-bottom: 1rem;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+          font-weight: bold;
+          color: #ff69b4; // rosa fuerte
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.6;
+          text-align: justify;
+          color: #333; // gris oscuro
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tienda {
+    padding: 1rem;
+
+    .tabla-tienda {
+      .fila-ropa {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        section {
+          .ropa {
+            max-width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,58 @@
+@use "variables" as v;
+
+footer {
+  background-color: v.$colorSecundario;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  flex-wrap: wrap;
+  margin-top: auto; // Empuja el footer hacia abajo cuando el contenido es pequeño
+  
+  h2 {
+    font-size: 1rem;
+  }
+
+  ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+  }
+
+  li a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.whatsapp {
+  height: auto;
+  width: 5vw;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  /* Ajustar tamaño de WhatsApp solo en móviles */
+  .whatsapp {
+    width: 13vw;  // Hacemos que el logo sea más grande en pantallas pequeñas
+  }
+
+  li a img {
+    width: 40px;  // Aumentar el tamaño de los íconos en pantallas pequeñas
+    height: 40px;
+  }
+}

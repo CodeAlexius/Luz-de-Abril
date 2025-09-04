@@ -1,0 +1,88 @@
+@use "variables" as v;
+
+header {
+  background-color: v.$colorPrimario; // Fondo para el header (puedes cambiar el color)
+  display: flex;
+  justify-content: space-between;  // Esto separa el logo, título y menú
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+
+  .logo {
+    width: 100px;  // Ajuste del tamaño del logo
+    height: auto;
+    margin-left: auto; // Alinea el logo a la derecha
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;  // Hace que el título ocupe el espacio central
+  }
+
+  nav {
+    ul.nav {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+      align-items: center;
+
+      li {
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 1rem;
+          padding: 5px 10px;
+        }
+      }
+    }
+
+    // Menú hamburguesa (solo visible en pantallas pequeñas)
+    .menu-toggle {
+      display: none;  // Ocultamos el menú por defecto en pantallas grandes
+
+      @media (max-width: 768px) {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // Estilos para el header en pantallas pequeñas
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    
+    .logo {
+      width: 80px;  // Ajuste del tamaño del logo en móviles
+    }
+
+    h1 {
+      font-size: 1.5rem;  // Reducir el tamaño del título en pantallas pequeñas
+      text-align: center;
+    }
+
+    nav ul.nav {
+      flex-direction: column;  // El menú se apila en columna
+      gap: 10px;
+      text-align: center;
+    }
+
+    nav li a {
+      font-size: 1rem;  // Ajuste del tamaño del texto en móviles
+    }
+
+    .menu-toggle {
+      display: block;  // El menú hamburguesa solo aparece en pantallas pequeñas
+    }
+  }
+}
+  
+
+        

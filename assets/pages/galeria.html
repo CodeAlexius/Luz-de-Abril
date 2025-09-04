@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style/style.css">
+  <title>Luz de Abril - Galería</title>
+</head>
+
+<body>
+
+  <header>
+
+    <a href="../../index.html">
+      <!--<img src="../img/flordeabril.png" alt="Logo Flor de Abril" title="Flor de Abril" class="home-img"> -->
+      <img src="../img/luzdeabril.png" alt="Logo Flor de Abril" title="Flor de Abril" class="logo">
+    </a>
+
+    <h1>Luz de Abril</h1> <!-- H1 se utiliza uno solo por archivo HTML-->
+    <!-- Son de H2 a H6 y no se pueden saltear, pero se puede repetir-->
+    <!-- h: headerin = titular // 1 al 6 es la relevancia -->
+
+    <nav>
+      <ul class="nav"> <!-- UL = Lista desordenada // OL = Lista Ordenada // LI = Item de Lista-->
+
+        <li>
+          <a href="./galeria.html">Galería</a>
+        </li>
+
+        <li>
+          <a href="./tienda.html">Tienda</a>
+        </li>
+
+        <li>
+          <a href="./contacto.html">Contacto</a>
+        </li>
+
+        <li>
+          <a href="./sobre-nosotros.html">Sobre Nosotros</a>
+        </li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <main class="galeria">
+    <h2 class="title">Galeria de productos</h2>
+
+    <div id="carouselBebes" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselBebes" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselBebes" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselBebes" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselBebes" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/muestra01.png" alt="conjunto01" titulo="conjunto" class="muestra">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/muestra02.png" alt="conjunto02" titulo="conjunto2" class="muestra">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/muestra03.png" alt="conjunto03" titulo="conjunto3" class="muestra">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/muestra04.png" alt="conjunto04" titulo="conjunto4" class="muestra">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselBebes" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselBebes" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </main>
+
+  <footer>
+    <h2>Derechos reservados de Luz de Abril</h2>
+    <h2>Hecho por Alejo Tejada</h2>
+
+    <nav>
+      <ul class="nav">
+        <li>
+          <a href="https://www.instagram.com/luzdeabrilkids" target="_blank">
+            <!--blank es para que lo abra en una pestaña aparte-->
+            <img src="../img/instagram.png" alt="Logo de Instragram" class="redes">
+          </a>
+        </li>
+
+        <li>
+          <a href="https://x.com/home" target="_blank">
+            <img src="../img/TwitterX.png" alt="Logo de TwitterX" class="redes">
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="../img/facebook.png" alt="Logo de Facebook" class="redes">
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.whatsapp.com" target="_blank">
+            <img src="../img/whatsapp.jpg" class="whatsapp">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
