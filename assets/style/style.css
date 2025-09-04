@@ -124,19 +124,59 @@ html, body {
 }
 
 .main {
+  display: flex; /* Usamos flexbox para organizar imagen y texto en una fila */
+  align-items: center; /* Centra el contenido verticalmente */
   padding: 20px;
   flex-grow: 1;
 }
-.main .home-img {
-  width: 90%;
-  max-width: 600px;
-  border-radius: 12px;
-  margin-bottom: 15px;
-}
-.main main {
-  flex-grow: 1;
+
+.content-container {
+  display: flex; /* Usa flexbox para alinear imagen y texto horizontalmente */
+  align-items: center; /* Alinea verticalmente los elementos */
+  justify-content: flex-start; /* Alinea los elementos al principio (a la izquierda) */
 }
 
+.home-img {
+  width: 40%; /* Ajusta el tamaño de la imagen */
+  max-width: 600px;
+  border-radius: 12px;
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.texto {
+  max-width: 600px; /* Asegura que el texto no ocupe más de 600px */
+  font-size: 1.2rem; /* Ajusta el tamaño de la fuente */
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    align-items: center;
+  }
+  .content-container {
+    flex-direction: column; /* Organiza imagen y texto en columna */
+    text-align: center; /* Centra el texto */
+  }
+  .home-img {
+    width: 80%; /* Aumenta el tamaño de la imagen en móviles */
+    margin-right: 0; /* Elimina el margen derecho */
+    margin-bottom: 20px; /* Añade espacio debajo de la imagen */
+  }
+  .texto {
+    font-size: 1rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
+    padding: 10px; /* Añade un poco de padding alrededor del texto */
+  }
+}
+/* Media Query para pantallas más pequeñas (como smartphones en modo vertical) */
+@media (max-width: 480px) {
+  .home-img {
+    width: 90%; /* Aumenta aún más el tamaño de la imagen */
+  }
+  .texto {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto para móviles pequeños */
+    padding: 15px;
+  }
+}
 .contacto {
   display: flex;
   flex-direction: column;
