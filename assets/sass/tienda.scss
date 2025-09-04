@@ -11,13 +11,16 @@
     .fila-ropa {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.5rem;
-      align-items: flex-start;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
 
       section {
         flex: 1;
         min-width: 280px;
-
+        max-width: 600px;           
+        padding: 0 1rem;            
+      }
         .ropa {
           width: 100%;
           max-width: 320px;
@@ -27,22 +30,21 @@
         }
 
         h2 {
-          font-size: 1.5rem;
-          margin-bottom: 0.5rem;
-          font-weight: bold;
+          margin-bottom: 0.75rem;
+          text-align: center;
           color: #ff69b4; // rosa fuerte
         }
 
         p {
           font-size: 1rem;
-          line-height: 1.6;
+          line-height: 1.8;
           text-align: justify;
           color: #333; // gris oscuro
         }
       }
     }
   }
-}
+
 
 @media (max-width: 768px) {
   .tienda {
@@ -50,7 +52,7 @@
 
     .tabla-tienda {
       .fila-ropa {
-        flex-direction: column;
+        //flex-direction: column;
         align-items: center;
         text-align: center;
 

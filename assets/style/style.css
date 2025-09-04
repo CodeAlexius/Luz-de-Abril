@@ -14,7 +14,6 @@ header {
   align-items: center;
   padding: 15px;
   margin-bottom: 20px;
-  flex-wrap: wrap;
 }
 header .logo {
   width: 100px;
@@ -40,16 +39,6 @@ header nav ul.nav li a {
   font-weight: bold;
   font-size: 1rem;
   padding: 5px 10px;
-}
-header nav .menu-toggle {
-  display: none;
-}
-@media (max-width: 768px) {
-  header nav .menu-toggle {
-    display: block;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
 }
 @media (max-width: 768px) {
   header {
@@ -277,29 +266,31 @@ html, body {
 .tienda .tabla-tienda .fila-ropa {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  align-items: flex-start;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 .tienda .tabla-tienda .fila-ropa section {
   flex: 1;
   min-width: 280px;
+  max-width: 600px;
+  padding: 0 1rem;
 }
-.tienda .tabla-tienda .fila-ropa section .ropa {
+.tienda .tabla-tienda .fila-ropa .ropa {
   width: 100%;
   max-width: 320px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   margin-bottom: 1rem;
 }
-.tienda .tabla-tienda .fila-ropa section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
+.tienda .tabla-tienda .fila-ropa h2 {
+  margin-bottom: 0.75rem;
+  text-align: center;
   color: #ff69b4;
 }
-.tienda .tabla-tienda .fila-ropa section p {
+.tienda .tabla-tienda .fila-ropa p {
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.8;
   text-align: justify;
   color: #333;
 }
@@ -309,7 +300,6 @@ html, body {
     padding: 1rem;
   }
   .tienda .tabla-tienda .fila-ropa {
-    flex-direction: column;
     align-items: center;
     text-align: center;
   }
